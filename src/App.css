@@ -21,48 +21,45 @@ body {
   border-radius: 20%;
   padding: 1rem;
 }
+
+/* Main Bouton operating + result */
 .main {
+  margin-top: 35%;
+  height: 30rem;
+}
+.col1 {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: inherit;
-  height: 50rem;
+  justify-content: space-around;
 }
-/* Bouton operating + result */
-.operating {
-  display: table;
-  justify-content: center;
-
-  width: inherit;
-  margin-top: 15rem;
-}
-.minus {
-  display: flex;
-  justify-content: flex-end;
-}
-.sign-minus {
+.switch-on {
   background-color: #ffffff;
-  color: #000000;
+  color: #5c48d3;
   font-size: xx-large;
   font-weight: bold;
-  height: 3rem;
-  width: 5rem;
+
   margin-left: 63%;
-  border: none;
+  border-radius: 10%;
 }
-.plus {
+.on,
+.off {
+  display: block;
+  width: 5rem;
+}
+.row {
   display: flex;
-  justify-content: flex-start;
+  margin-bottom: 1rem;
 }
-.sign-plus {
-  background-color: #ffffff;
-  color: #000000;
+.switch-off {
+  background-color: #5c48d3;
+  color: #ffffff;
   font-size: xx-large;
   font-weight: bold;
-  height: 3rem;
-  width: 5rem;
-  border: none;
+
+  margin-left: 2rem;
+  border-radius: 10%;
 }
 .result {
   display: table-cell;
