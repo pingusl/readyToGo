@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-const Main = () => {
+import Switch from "./switch";
+
+const Main = ({ switchvalue, setSwitch }) => {
   const [switch1, setSwitch1] = useState(false);
   const [switch2, setSwitch2] = useState(false);
   const [switch3, setSwitch3] = useState(false);
@@ -8,34 +10,13 @@ const Main = () => {
   return (
     <main className="main">
       <div className="col1">
-        <div className="row">
-          <button className="switch-on">
-            <span className="on">ON</span>
-          </button>
-          <button className="switch-off">
-            <span className="off">OFF</span>
-          </button>
-        </div>
-        <div className="row">
-          <button className="switch-on">
-            <span className="on">ON</span>
-          </button>
-          <button className="switch-off">
-            <span className="off">OFF</span>
-          </button>
-        </div>
-        <div className="row">
-          <button className="switch-on">
-            <span className="on">ON</span>
-          </button>
-          <button className="switch-off">
-            <span className="off">OFF</span>
-          </button>
-        </div>
+        <Switch switchvalue={switch1} setSwitch={setSwitch1} />
+        <Switch switchvalue={switch2} setSwitch={setSwitch2} />
+        <Switch switchvalue={switch3} setSwitch={setSwitch3} />
       </div>
       <div className="col2">
-        <div className="ligth">
-          <span className="autorisation"></span>
+        <div className="ligth-authorization">
+          <span className="authorization"></span>
         </div>
       </div>
     </main>
